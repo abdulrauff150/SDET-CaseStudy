@@ -1,0 +1,115 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2021-04-15T04:59:24.699Z",
+        "line": 9,
+        "name": "Login as Admin",
+        "description": "",
+        "id": "login-features;login-as-admin",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10917000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am able to navigate onto login page",
+            "match": {
+              "location": "StepDefinition.Login.I_am_able_to_navigate_onto_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 281000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter the username as \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinition.Login.i_enter_the_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 194000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter the password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin123\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinition.Login.i_enter_the_password_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4185000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on Login button",
+            "match": {
+              "location": "StepDefinition.Login.i_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1138000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see the username as \"Welcome Paul\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Welcome Paul\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinition.Login.i_should_see_username_as(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login features",
+    "description": "This feature includes sceanrio that would validate the following feature.\n1) Login as Admin\n2) Login as linda.anderson\n3) Login with Nagative data",
+    "id": "login-features",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Login/Login.feature",
+    "tags": []
+  }
+]
