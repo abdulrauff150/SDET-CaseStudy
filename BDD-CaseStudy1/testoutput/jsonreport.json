@@ -11,96 +11,329 @@
         "steps": []
       },
       {
-        "start_timestamp": "2021-04-15T04:59:24.699Z",
+        "start_timestamp": "2021-05-02T13:51:26.970Z",
         "line": 9,
-        "name": "Login as Admin",
+        "name": "Register to elearning site",
         "description": "",
-        "id": "login-features;login-as-admin",
+        "id": "login-features;register-to-elearning-site",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 10917000000,
+              "duration": 9485000000,
               "status": "passed"
             },
             "line": 10,
             "name": "I am able to navigate onto login page",
             "match": {
-              "location": "StepDefinition.Login.I_am_able_to_navigate_onto_login_page()"
+              "location": "StepDefinitionCS.Register.I_am_able_to_navigate_onto_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 281000000,
+              "duration": 4233000000,
               "status": "passed"
             },
             "line": 11,
-            "name": "I enter the username as \"Admin\"",
+            "name": "I click on Sign up link",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Admin\"",
-                  "offset": 24
-                }
-              ],
-              "location": "StepDefinition.Login.i_enter_the_username_as(java.lang.String)"
+              "location": "StepDefinitionCS.Register.i_click_on_sign_up_link()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 194000000,
+              "duration": 177000000,
               "status": "passed"
             },
             "line": 12,
-            "name": "I enter the password as \"admin123\"",
+            "name": "I enter First name as \"AbdulRauff\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"admin123\"",
-                  "offset": 24
+                  "val": "\"AbdulRauff\"",
+                  "offset": 22
                 }
               ],
-              "location": "StepDefinition.Login.i_enter_the_password_as(java.lang.String)"
+              "location": "StepDefinitionCS.Register.i_enter_first_name_as_something(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4185000000,
+              "duration": 148000000,
               "status": "passed"
             },
             "line": 13,
-            "name": "I click on Login button",
+            "name": "I enter Last name as \"Mohammed\"",
             "match": {
-              "location": "StepDefinition.Login.i_click_on_login_button()"
+              "arguments": [
+                {
+                  "val": "\"Mohammed\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitionCS.Register.i_enter_last_name_as_something(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1138000000,
+              "duration": 187000000,
               "status": "passed"
             },
             "line": 14,
-            "name": "I should see the username as \"Welcome Paul\"",
+            "name": "I enter email address as \"abdulbasmail@gmail.com\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Welcome Paul\"",
-                  "offset": 29
+                  "val": "\"abdulbasmail@gmail.com\"",
+                  "offset": 25
                 }
               ],
-              "location": "StepDefinition.Login.i_should_see_username_as(java.lang.String)"
+              "location": "StepDefinitionCS.Register.i_enter_email_address_as_something(java.lang.String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter Username as \"abdulmohamq123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abdulmohamq123\"",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitionCS.Register.i_enter_username_as_something(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 152000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter Password as \"abdul@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abdul@123\"",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitionCS.Register.i_enter_password_as_something(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 147000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter confirm password as \"abdul@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abdul@123\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinitionCS.Register.i_enter_confirm_password_as_something(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 779000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on Register button",
+            "match": {
+              "location": "StepDefinitionCS.Register.i_click_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am navigated to confirmation page",
+            "match": {
+              "location": "StepDefinitionCS.Register.i_am_navigated_to_confirmation_page()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Login"
+            "name": "@Register"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2021-05-02T13:51:42.609Z",
+        "line": 22,
+        "name": "Send test mail",
+        "description": "",
+        "id": "login-features;send-test-mail",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am in confiramtion page",
+            "match": {
+              "location": "StepDefinitionCS.SendMessage.i_am_in_confiramtion_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat java.util.Objects.requireNonNull(Objects.java:203)\r\n\tat org.openqa.selenium.interactions.Actions.\u003cinit\u003e(Actions.java:65)\r\n\tat StepDefinitionCS.SendMessage.i_click_on_drop_down_on_top_right(SendMessage.java:27)\r\n\tat ✽.I click on drop down on top right(file:///C:/Users/ABDULRAUFFMOHAMMED/git/SDET-CaseStudy/BDD-CaseStudy1/src/test/resources/Login/Register_SendMsg.feature:24)\r\n",
+              "duration": 8000000,
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "I click on drop down on top right",
+            "match": {
+              "location": "StepDefinitionCS.SendMessage.i_click_on_drop_down_on_top_right()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "I verify my name and email id",
+            "match": {
+              "location": "StepDefinitionCS.SendMessage.i_verify_my_name_and_email_id()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "I click on Inbox icon",
+            "match": {
+              "location": "StepDefinitionCS.SendMessage.i_click_on_inbox_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "I click on Compose icon",
+            "match": {
+              "location": "StepDefinitionCS.SendMessage.i_click_on_compose_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I fill in Send to as \"test1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test1\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitionCS.SendMessage.i_fill_in_send_to_as_something(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I enter subject as \"test msg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test msg\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitionCS.SendMessage.i_enter_subject_as_something(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "I enter message as \"testing mail send\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testing mail send\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitionCS.SendMessage.i_enter_message_as_something(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "I click on button send message",
+            "match": {
+              "location": "StepDefinitionCS.SendMessage.i_click_on_button_send_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "I can see confirmation of message sent",
+            "match": {
+              "location": "StepDefinitionCS.SendMessage.i_can_see_confirmation_of_message_sent()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Register"
           }
         ]
       }
@@ -109,7 +342,7 @@
     "description": "This feature includes sceanrio that would validate the following feature.\n1) Login as Admin\n2) Login as linda.anderson\n3) Login with Nagative data",
     "id": "login-features",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Login/Login.feature",
+    "uri": "file:src/test/resources/Login/Register_SendMsg.feature",
     "tags": []
   }
 ]

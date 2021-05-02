@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.385">
-<testcase classname="Login features" name="Login as Admin" time="16.917">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="16.003">
+<testcase classname="Login features" name="Register to elearning site" time="15.612">
 <system-out><![CDATA[Given I am able to navigate onto login page.................................passed
-When I enter the username as "Admin"........................................passed
-And I enter the password as "admin123"......................................passed
-And I click on Login button.................................................passed
-And I should see the username as "Welcome Paul".............................passed
+When I click on Sign up link................................................passed
+And I enter First name as "AbdulRauff"......................................passed
+And I enter Last name as "Mohammed".........................................passed
+And I enter email address as "abdulbasmail@gmail.com".......................passed
+And I enter Username as "abdulmohamq123"....................................passed
+And I enter Password as "abdul@123".........................................passed
+And I enter confirm password as "abdul@123".................................passed
+And I click on Register button..............................................passed
+Then I am navigated to confirmation page....................................passed
 ]]></system-out>
+</testcase>
+<testcase classname="Login features" name="Send test mail" time="0.021">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given I am in confiramtion page.............................................passed
+When I click on drop down on top right......................................failed
+And I verify my name and email id...........................................skipped
+And I click on Inbox icon...................................................skipped
+And I click on Compose icon.................................................skipped
+And I fill in Send to as "test1"............................................skipped
+And I enter subject as "test msg"...........................................skipped
+And I enter message as "testing mail send"..................................skipped
+And I click on button send message..........................................skipped
+Then I can see confirmation of message sent.................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at org.openqa.selenium.interactions.Actions.<init>(Actions.java:65)
+	at StepDefinitionCS.SendMessage.i_click_on_drop_down_on_top_right(SendMessage.java:27)
+	at ✽.I click on drop down on top right(file:///C:/Users/ABDULRAUFFMOHAMMED/git/SDET-CaseStudy/BDD-CaseStudy1/src/test/resources/Login/Register_SendMsg.feature:24)
+]]></failure>
 </testcase>
 </testsuite>

@@ -7,9 +7,9 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features= {"src/test/resources/Login/Login.feature"}, 
-glue = {"StepDefinition"},
-tags = "@Login",
+@CucumberOptions(features= {"src/test/resources/Login/Register_SendMsg.feature"}, 
+glue = {"StepDefinitionCS"},
+tags = "@Register",
 dryRun = false,
 monochrome = true,
 plugin = {"html:testoutput/Abdul.html", "junit:testoutput/report.xml" , "json:testoutput/jsonreport.json"})
