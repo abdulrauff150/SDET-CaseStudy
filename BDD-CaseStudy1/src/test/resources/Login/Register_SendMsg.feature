@@ -12,7 +12,7 @@ When I click on Sign up link
 And I enter First name as "AbdulRauff" 
 And I enter Last name as "Mohammed" 
 And I enter email address as "abdulbasmail@gmail.com" 
-And I enter Username as "abdulmohamq123"   
+And I enter Username as "abdulmohamvm12312"   
 And I enter Password as "abdul@123" 
 And I enter confirm password as "abdul@123" 
 And I click on Register button

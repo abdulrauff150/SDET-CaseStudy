@@ -1,5 +1,7 @@
 package StepDefinitionCS;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -24,10 +26,14 @@ public class SendMessage {
     @When("I click on drop down on top right")
     public void i_click_on_drop_down_on_top_right() throws Throwable {
     	
-    	 Actions actions = new Actions(driver);
+    	 /*Actions actions = new Actions(driver);
     	 WebElement menuOption = driver.findElement(By.xpath("//*[@id='navbar']/ul[2]/li[2]/a"));
     	 actions.moveToElement(menuOption).perform();
-    	 menuOption.click();
+    	 menuOption.click(); */
+    	driver.manage().timeouts().implicitlyWait(50,TimeUnit.SECONDS);
+    	driver.findElement(By.xpath("//img[@src='http://elearningm1.upskills.in/main/img/icons/32/unknown.png']")).click();
+    	
+
     }
 
     @Then("I can see confirmation of message sent")
