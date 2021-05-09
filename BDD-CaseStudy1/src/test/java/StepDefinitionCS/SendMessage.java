@@ -39,9 +39,9 @@ public class SendMessage {
     @Then("I can see confirmation of message sent")
     public void i_can_see_confirmation_of_message_sent() throws Throwable {
     	String name = driver.findElement(By.xpath("//div[@class='alert alert-success']")).getText();
-	    String Actualdata = "The message has been sent to kogile nethra (nethra123)";
+	    String Actualdata = "The message has been sent to AbdulRauff Mohammed ";
 	    Assert.assertEquals(name,Actualdata);
-	    System.out.println("The message has been sent to kogile nethra (nethra123)");	
+	    System.out.println("The message has been sent to AbdulRauff Mohammed ");	
 	    driver.close();
     }
 
